@@ -10,18 +10,20 @@ const Intro = () => {
                 <h1 class="inset">&lt;fizo-neechan/&gt;</h1>
                 <h3>Welcome to my portfolio.</h3>
                 <p>Web developer | Student</p>
-                <a href="#about-me" id="res" download={'../assets/Resume/Muhammad Faizan Haq - CV.pdf'}>
-                    <BiDownload className='btn-icon'/>
-                    <span>
-                        Resume
-                    </span>
-                </a>
-                <a href="#contact" id="contact-btn">
-                    <HiOutlineMailOpen className='btn-icon'/>
-                    <span>
-                        Contact
-                    </span>
-                </a>
+                <div id='cta'>
+                    <a href="#about-me" id="res" download={'../assets/Resume/Muhammad Faizan Haq - CV.pdf'}>
+                        <BiDownload className='btn-icon'/>
+                        <span>
+                            Resume
+                        </span>
+                    </a>
+                    <a href="#contact" id="contact-btn">
+                        <HiOutlineMailOpen className='btn-icon'/>
+                        <span>
+                            Contact
+                        </span>
+                    </a>
+                </div>
             </div>
             <div class="inset" id="hero-tag">
                 <h6>&lt;/&gt;</h6>

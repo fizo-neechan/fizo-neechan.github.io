@@ -606,7 +606,7 @@ textarea {
 
     #contact .contact .socials > div {
         border: none;
-        border-bottom: #333 2px solid !important;
+        border-bottom: #ccc 2px solid !important;
     }
 
     #contact .contact .socials > div > div {
@@ -667,5 +667,14 @@ textarea {
 
     #projects .projects {
         padding: 0.5rem 0 !important;
+    }
+
+    #contact {
+        padding: 0rem !important;
+    }
+    
+    #cta {
+        display: flex !important;
+        flex-direction: column;
     }
 }
