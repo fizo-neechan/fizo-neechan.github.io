@@ -632,7 +632,7 @@ textarea {
         width: 75%;
         padding: 1rem 1rem 1.5rem;
         border: none;
-        border-bottom: #ccc 3px solid;
+        border-bottom: #ccc 2px solid;
     }
 
     #skills .skills .logos {
