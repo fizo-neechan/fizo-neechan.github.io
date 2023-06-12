@@ -5,9 +5,9 @@ import {HiOutlineMailOpen} from 'react-icons/hi'
 const Intro = () => {
   return (
     <section id="welcome">
-        <div class="section-content">
-            <div class="main">
-                <h1 class="inset">&lt;fizo-neechan/&gt;</h1>
+        <div className="section-content">
+            <div className="main">
+                <h1 className="inset">&lt;fizo-neechan/&gt;</h1>
                 <h3>Welcome to my portfolio.</h3>
                 <p>Web developer | Student</p>
                 <div id='cta'>
@@ -25,7 +25,7 @@ const Intro = () => {
                     </a>
                 </div>
             </div>
-            <div class="inset" id="hero-tag">
+            <div className="inset" id="hero-tag">
                 <h6>&lt;/&gt;</h6>
             </div>
         </div>

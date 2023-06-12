@@ -212,59 +212,62 @@ section  {
     margin-top: 1rem;
 }
 
-#skills h3 {
-    color: var(--color-accent);
+#skills {
+    padding: 2rem 1rem;
+}
+
+#skills h2 {
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+#skills .skills .label h3{
     padding-bottom: 1rem;
+    font-size: 1.5rem;
 }
 
-.progress {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0 2rem;
-}
-
-.progress-container {
-    padding: 0.75rem 0;
-}
-
-.label {
-    color: var(--color-text);
-    font-size: 1.25rem;
-}
-
-.progress-bar {
+#skills .skills {
+    /* background-color: red; */
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    gap: 0.5rem;
 }
 
-.bar-container {
-    width: 100%;
-    height: 0.5rem;
-    margin: auto 0;
-    background-color: #ddd;
+#skills .skills > div {
+    width: 25%;
+    text-align: center !important;
+    padding: 0 2rem;
+    border-right: #ccc 3px solid;
+}
+
+#skills .skills > div:last-child {
+    border: none;
+}
+
+#skills .skills > div .logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center ;
+}
+
+
+#skills .skills .logos img {
+    width: 3rem;
+    padding: 0.5rem;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
     border-radius: 0.5rem;
     -webkit-border-radius: 0.5rem;
     -moz-border-radius: 0.5rem;
     -ms-border-radius: 0.5rem;
     -o-border-radius: 0.5rem;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
 }
 
-.inner-bar {
-    /*width: 90%;
-    */height: 100%;
-    background-color: var(--color-accent);
-    border-radius: 0.5rem;
-    -webkit-border-radius: 0.5rem;
-    -moz-border-radius: 0.5rem;
-    -ms-border-radius: 0.5rem;
-    -o-border-radius: 0.5rem;
-}
-
-.progress-label {
-    font-size: 1.25rem;
-    color: var(--color-text);
+#skills .skills .logos img:hover {
+    width: 3.2rem;
 }
 
 #services .services {
@@ -599,6 +602,28 @@ textarea {
         text-align: justify;
     }
 
+    #skills .skills {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #skills h2 {
+        padding-bottom: 0.25rem;
+    }
+
+    #skills .skills > div {
+        /* margin: 0rem 4rem; */
+        width: 75%;
+        padding: 1rem 1rem 1.5rem;
+        border: none;
+        border-bottom: #ccc 3px solid;
+    }
+
+    #skills .skills img {
+        width: 2rem !important;
+    };
+
+
     #services .services {
         display: grid !important;
         grid-template-columns: repeat(2, 1fr);
@@ -673,12 +698,7 @@ textarea {
         font-size: 1rem !important;
     }
 
-    #skills .progress, #services .services, #projects .projects {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 1rem;
-    }
-
-    #skills h3 {
+    #skills h2 {
         font-size: 2rem !important;
     }
 
@@ -687,7 +707,7 @@ textarea {
     }
 
     #contact {
-        padding: 0rem !important;
+        padding: 0.5rem !important;
     }
     
     #cta {

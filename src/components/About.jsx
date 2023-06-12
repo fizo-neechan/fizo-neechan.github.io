@@ -1,40 +1,12 @@
 import React from 'react'
 import profilePic from '../assets/profilepic.png'
-import ProgressBar from './ProgressBar'
+// import ProgressBar from './ProgressBar'
+import Skills from './Skills'
 
 
 const About = () => {
 
-    const skills = [
-        {
-            name: "JavaScript",
-            percentage: "90%"
-        },
-        {
-            name: "Python",
-            percentage: "90%"
-        },
-        {
-            name: "React",
-            percentage: "60%"
-        },
-        {
-            name: "TensorFlow",
-            percentage: "80%"
-        },
-        {
-            name: "Numpy, Keras",
-            percentage: "90%"
-        },
-        {
-            name: "OpenCV",
-            percentage: "95%"
-        }
-    ]
-    
-    // const skillBars = 
-    // console.log(skillBars)
-  return (
+    return (
     <section id="about-me">
         <div className="section-content">
             <div className='about-me-content'>
@@ -52,19 +24,7 @@ const About = () => {
                 <img src={profilePic} alt="profile"/>
             </div>
         </div>
-        <div className="bevel-shadow" id="skills">
-            <div>
-                <h3 className="inset">Skills</h3>
-            </div>
-
-            <div className="progress">
-                {skills.map(function(skill,i){
-                    return (
-                        <ProgressBar skillname={skill.name} percentage={skill.percentage}/>
-                    );
-                })}
-            </div>
-        </div>
+        <Skills/>
     </section>
   )
 }
