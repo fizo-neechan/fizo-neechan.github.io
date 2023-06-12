@@ -67,7 +67,7 @@ p {
     font-size: 1.25rem;
 }
 
-a .btn-icon {
+.btn-icon {
     width: 20px;
     padding: 0 6px;
     transform: translateY(2px);
@@ -411,8 +411,11 @@ section  {
 }
 
 #projects .card-tech {
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
     display: flex;
     flex-wrap: wrap;
+    border-top: #ccc 3px solid;
 }
 
 #contact .contact {
@@ -483,6 +486,7 @@ section  {
 textarea {
     height: auto;
     font-family: inherit;
+    font-weight: var(--normal);
 }
 
 #contact .email-me .email-icon {
@@ -499,8 +503,21 @@ textarea {
 }
 
 #contact form button {
+    font-family: inherit;
     background-color: transparent;
-    border: none;
+    border: var(--color-text) 3px solid;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    padding: 5px 10px;
+    font-size: 1.25rem;
+}
+
+#contact form button:hover {
+    background-color: #000;
+    color: white;
 }
 
 
@@ -676,5 +693,7 @@ textarea {
     #cta {
         display: flex !important;
         flex-direction: column;
+        width: max-content;
+        margin: 0 auto;
     }
 }

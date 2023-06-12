@@ -1,7 +1,25 @@
-import React from 'react'
+import React, {useRef} from 'react'
+import emailjs from '@emailjs/browser';
 import {AiOutlineMail, AiOutlineInstagram, AiOutlineWhatsApp} from 'react-icons/ai'
+import {AiOutlineSend} from 'react-icons/ai'
 
 const Contact = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_7k3ar9s', 'template_phit29o', form.current, 'h4cBV5WvsuEP1ji6i')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+
+        e.target.reset();
+        return false;
+    };
+
   return (
     <section id="contact">
         <div className=".section-content">
@@ -9,11 +27,14 @@ const Contact = () => {
                 <div><h2 className="inset">&lt;get-in-touch/&gt;</h2></div>
                 <div className='contact'>
                     <div className="email-me">
-                        <form className="email-container" action='/message' method='POST'>
-                            <input type="text" placeholder="Name" required/>
-                            <input type="email" placeholder="Email" required/>
+                        <form className="email-container" ref={form} onSubmit={sendEmail}>
+                            <input type="text" placeholder="Name" name='name' required/>
+                            <input type="email" placeholder="Email" name='email' required/>
                             <textarea placeholder="Message..." rows={4} name="message" required/>
-                            <button type='submit'><a href='#'>Send</a></button>
+                            <button type='submit'>
+                                <AiOutlineSend className='btn-icon'/>
+                                <span>Send</span>
+                            </button>
                         </form>
                     </div>
                     <div className='socials'>
