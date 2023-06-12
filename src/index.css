@@ -27,7 +27,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: var(--color-accent);
-  background-image: url('../public/memphis-mini.png');
+  background-image: url('./assets/memphis-mini.png');
   background-blend-mode: hard-light;
   /* background-image: repeating-radial-gradient(--color-accent 2px, transparent 1px); */
   /* background-image: radial-gradient(rgba(249, 27, 27, 0.1) 2px, transparent 1px); */
@@ -195,7 +195,7 @@ section  {
     -ms-border-radius: 100%;
     -o-border-radius: 100%;
     background-color: var(--color-accent);
-    background-image: url('../public/memphis-mini.png');
+    background-image: url('./assets/memphis-mini.png');
     background-blend-mode: hard-light;
     background-size: 250%;
     /* background-image: radial-gradient(rgba(249, 27, 27, 1) 2.5px, transparent 1px); */
