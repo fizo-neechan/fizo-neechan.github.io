@@ -731,6 +731,11 @@ textarea {
         padding: 0.5rem 0 !important;
     }
 
+    #projects .projects, #services .services {
+        margin: 0 auto;
+        width: 80%;
+    }
+
     #contact {
         padding: 0.5rem !important;
     }
