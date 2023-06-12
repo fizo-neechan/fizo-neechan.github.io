@@ -4,8 +4,9 @@ import Services from './components/Services';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Spacer from './components/Spacer';
-import './App.css';
 import React from 'react';
+
+import './index.css'
 
 function App() {
   return (

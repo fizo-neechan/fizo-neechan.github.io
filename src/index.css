@@ -629,11 +629,11 @@ textarea {
 
     section {
         width: auto;
-        padding: 2rem 1rem;
+        padding: 2rem 3rem;
     }
 
     body {
-        padding: 0 2%;
+        padding: 0 5%;
     }
 
     h1 {
@@ -658,7 +658,7 @@ textarea {
 
     #skills .progress, #services .services, #projects .projects {
         grid-template-columns: repeat(1, 1fr);
-        gap: 0.5rem;
+        gap: 1rem;
     }
 
     #skills h3 {
