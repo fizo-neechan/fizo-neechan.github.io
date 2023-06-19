@@ -17,14 +17,14 @@ const ProjectCard = (props) => {
                     <h4>{props.details.subtitle}</h4>
                 </div>
                 <div className="card-links">
-                    <a href={props.details.githubLink}>
+                    <a className='github'  href={props.details.githubLink}>
                         <BsGithub className='btn-icon'/>
                         <span>Github</span>
                     </a>
                 </div>
                 <div className="card-tech">
                     {props.details.tech.map(i => (
-                        <a href='github.com'>
+                        <a href='#'>
                             {i.icon}
                             <span>{i.label}</span>
                         </a>

@@ -26,9 +26,10 @@ html {
 body {
   padding: 0;
   margin: 0;
-  background-color: var(--color-accent);
+  /* background-color: #dedede; */
+  /* background-color: var(--color-accent);
   background-image: url('./assets/memphis-mini.png');
-  background-blend-mode: hard-light;
+  background-blend-mode: hard-light; */
   /* background-image: repeating-radial-gradient(--color-accent 2px, transparent 1px); */
   /* background-image: radial-gradient(rgba(249, 27, 27, 0.1) 2px, transparent 1px); */
   background-size: 30%;
@@ -119,8 +120,9 @@ section {
 }
 
 section  {
-    background-color: rgba(var(--color-secondary-rgb), 0.8);
-    background-color: rgba(e9, e7, e9, 0.1);
+    /* background-color: rgba(var(--color-secondary-rgb), 0.8); */
+    /* background-color: rgba(09, 07, 09, 0.04); */
+    background-color: #f7f7f7;
     border-radius: 1.5rem;
     -webkit-border-radius: 1.5rem;
     -moz-border-radius: 1.5rem;
@@ -194,10 +196,10 @@ section  {
     -moz-border-radius: 100%;
     -ms-border-radius: 100%;
     -o-border-radius: 100%;
-    background-color: var(--color-accent);
-    background-image: url('./assets/memphis-mini.png');
-    background-blend-mode: hard-light;
-    background-size: 250%;
+    /* background-color: var(--color-accent); */
+    /* background-image: url('./assets/memphis-mini.png'); */
+    /* background-blend-mode: hard-light; */
+    /* background-size: 250%; */
     /* background-image: radial-gradient(rgba(249, 27, 27, 1) 2.5px, transparent 1px); */
 }
 
@@ -235,7 +237,7 @@ section  {
     width: 25%;
     text-align: center !important;
     padding: 0 2rem;
-    border-right: #ccc 3px solid;
+    border-right: #ddd 2px solid;
 }
 
 #skills .skills > div:last-child {
@@ -367,7 +369,7 @@ section  {
 }
 
 #projects .card-img {
-    margin: 10% 10%;
+    margin: 5% 20%;
 }
 
 
@@ -399,12 +401,12 @@ section  {
     font-weight: 700;
 }
 
-#projects .card-links > a {
+#projects .card-links > a.github {
     color: var(--color-accent);
     border-color: var(--color-accent);
 }
 
-#projects .card-links > a:hover {
+#projects .card-links > a.github:hover {
     color: white;
     background-color: var(--color-accent);
 }
@@ -415,10 +417,10 @@ section  {
 
 #projects .card-tech {
     margin-top: 0.5rem;
-    padding-top: 0.5rem;
+    padding-top: 0.7rem;
     display: flex;
     flex-wrap: wrap;
-    border-top: #ccc 3px solid;
+    border-top: #ddd 2px solid;
 }
 
 #contact .contact {
@@ -476,7 +478,7 @@ section  {
     margin: 0.5rem auto;
     width: 100%;
     height: 2rem;
-    background-color: #ddd;
+    background-color: #f7f7f7;
     border-radius: 1.5rem;
     -webkit-border-radius: 1.5rem;
     -moz-border-radius: 1.5rem;

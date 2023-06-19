@@ -22,7 +22,7 @@ const Projects = () => {
             displayImg: investing,
             title: "Stock Market Predictor",
             subtitle: "SIMP Website",
-            githubLink: "github.com/fizo-neechan",
+            githubLink: "https://github.com/fizo-neechan/Stock-Investment-and-Market-Predictor-Website",
             tech: [
                 {
                     icon: <LuFlaskConical  className="btn-icon"/>,
@@ -46,7 +46,7 @@ const Projects = () => {
             displayImg: portfolio,
             title: "Portfolio",
             subtitle: "React Website",
-            githubLink: "github.com/fizo-neechan",
+            githubLink: "https://github.com/fizo-neechan/Portfolio",
             tech: [
                 {
                     icon: <FaReact  className="btn-icon"/>,
@@ -66,7 +66,7 @@ const Projects = () => {
             displayImg: drone,
             title: "Aerial Flight Detection System",
             subtitle: "Custom object detection model",
-            githubLink: "github.com/fizo-neechan",
+            // githubLink: "github.com/fizo-neechan",
             tech: [
                 {
                     icon: <SiPython  className="btn-icon"/>,
@@ -86,7 +86,7 @@ const Projects = () => {
             displayImg: gate,
             title: "Automated Gate Entry/Exit System",
             subtitle: "Single Page web-application with barcode reader",
-            githubLink: "github.com/fizo-neechan",
+            // githubLink: "github.com/fizo-neechan",
             tech: [
                 {
                     icon: <FaNodeJs  className="btn-icon"/>,
@@ -111,7 +111,7 @@ const Projects = () => {
             displayImg: tictactoe,
             title: "Tic-Tac-Toe playing AI",
             subtitle: "ANN developed from scratch",
-            githubLink: "github.com/fizo-neechan",
+            githubLink: "https://github.com/fizo-neechan/TicTacToe-CPP-ANN-SFML",
             tech: [
                 {
                     icon: <SiSfml className="btn-icon"/>,
@@ -127,7 +127,7 @@ const Projects = () => {
             displayImg: clusters,
             title: "Visualization of datasets and clusters",
             subtitle: "Scratch implementation",
-            githubLink: "github.com/fizo-neechan",
+            githubLink: "https://github.com/fizo-neechan/Visualization-of-Datasets-and-Clusters",
             tech: [
                 {
                     icon: <SiPython className="btn-icon"/>,

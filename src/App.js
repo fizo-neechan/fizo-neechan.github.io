@@ -15,8 +15,8 @@ function App() {
       <Spacer/>
       <About/>
       <Spacer/>
-      <Services/>
-      <Spacer/>
+      {/* <Services/>
+      <Spacer/> */}
       <Projects/>
       <Spacer/>
       <Contact/>
